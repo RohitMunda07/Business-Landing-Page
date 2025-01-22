@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather</title>
+
+    <!-- OUTPUT CSS -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="shortcut icon" href="/src/img/favicon.png" type="image/x-icon">
+</head>
+
+<body class="bg-slate-600 ">
+    <div
+        class="container mx-auto my-auto p-10 flex flex-col justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500">
+
+        <!-- header section -->
+        <header class="flex gap-3">
+            <div class="flex items-center p-2">
+                <input class="p-3 rounded-lg" id="searchBox" type="text" placeholder="search your city">
+            </div>
+            <div class="bg-white rounded-xl px-1 text-center flex items-center">
+                <button id="search"><i class="fa-solid fa-magnifying-glass p-3 text-3xl"></i></button>
+            </div>
+        </header>
+
+        <!-- main section -->
+        <main class="flex items-center flex-col min-w-96">
+            <div class="space-y-3">
+                <img id="img" class="w-[250px] h-[250px]" src="/src/img/sunny.png" alt="">
+                <p id="temp" class="text-5xl font-bold text-white text-center">0°C</p>
+                <p id="place" class="text-5xl font-light text-white text-center">-</p>
+                <p id="type" class="text-5xl font-light text-white text-center"></p>
+
+            </div>
+
+            <div class="flex justify-between w-full mt-5">
+                <div>
+                    <p id="humidity" class="text-3xl font-light text-white text-center">0</p>
+                    <p class="text-3xl font-light text-white text-center">Humidity</p>
+                </div>
+                <div>
+                    <p id="wind" class="text-3xl font-light text-white text-center">0</p>
+                    <p class="text-3xl font-light text-white text-center">wind speed</p>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+</body>
+
+<!-- MAIN JS -->
+<script src="./script.js"></script>
+
+</html>
