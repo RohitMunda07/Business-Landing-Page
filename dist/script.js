@@ -27,17 +27,17 @@ document.querySelector("#search").addEventListener('click', () => {
             // Updating weather image based on weather condition
             const weatherCondition = data.weather[0].main.toLowerCase();
             if (weatherCondition.includes("haze")) {
-                img.src = "/src/img/sunny.png";
+                img.src = "./src/img/sunny.png";
             } else if (weatherCondition.includes("clear")) {
-                img.src = "/src/img/sunny.png";
+                img.src = "./src/img/sunny.png";
             } else if (weatherCondition.includes("cloud")) {
-                img.src = "/src/img/cloudy.png";
+                img.src = "./src/img/cloudy.png";
             } else if (weatherCondition.includes("rain")) {
-                img.src = "/src/img/rainy.png";
+                img.src = "./src/img/rainy.png";
             } else if (weatherCondition.includes("thunderstorm")) {
-                img.src = "/src/img/storm.png";
+                img.src = "./src/img/storm.png";
             } else {
-                img.src = "/src/img/sunny.png"; // Fallback image
+                img.src = "./src/img/sunny.png"; // Fallback image
             }
 
             temp.innerHTML = `${data.main.temp}°C`
