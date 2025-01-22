@@ -57,7 +57,3 @@ document.querySelector("#search").addEventListener('click', () => {
         });
 })
 
-
-// <!-- gmail cahehim737@kimasoft.com -->
-// <!-- openWeatherMap api key 1b0110a441f34f650995942829253788 -->
-//  <!-- apiUrl https://api.openweathermap.org/data/2.5/weather?q=ranchi&appid=1b0110a441f34f650995942829253788&units=metric -->
